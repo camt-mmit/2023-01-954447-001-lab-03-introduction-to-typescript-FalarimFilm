@@ -1,0 +1,153 @@
+:root {
+  --app-font: sans-serif;
+
+  --app-font-size: 16px;
+
+  --app-icon-fill: 0;
+
+  --app-font-mono: monospace;
+
+  --app-primary-coler: #c05959;
+
+  --app-warp-coler: #2600ff;
+
+  font-family: var(--app-font);
+
+  font-size: var(--app-font-size);
+
+  text-align: center;
+}
+
+button {
+  display: inline-flex;
+
+  flex-direction: row;
+
+  align-items: center;
+
+  column-gap: 4px;
+
+  padding: 4px;
+
+  font-weight: bold;
+}
+
+button > * {
+  pointer-events: none;
+}
+
+.app-cl-primary {
+  color: var(--app-primary-coler);
+}
+
+.app-cl-warp {
+  color: var(--app-warp-coler);
+
+  --app-icon-fill: 1;
+}
+
+.app-cl-warp:disabled {
+  opacity: 0.25;
+}
+
+.app-cl-warp:not(:disabled) {
+  --app-icon-fill: 1;
+}
+
+.app-cmp-input-container,
+.app-cmp-input-container > label {
+  display: inline-flex;
+
+  flex-direction: row;
+
+  align-items: stretch;
+}
+
+.app-cmp-input-container > label {
+  flex: 1 0 auto;
+}
+
+.app-cmp-input-title::after {
+  content: "::";
+
+  color: var(--app-primary-coler);
+
+  font-weight: bold;
+
+  margin-left: auto;
+
+  margin-right: 1ch;
+}
+
+.app-main-container,
+.app-cmp-inputs-list {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.app-cmp-input {
+  flex: 1 0 auto;
+}
+
+.app-cmp-input-title {
+  display: inline-flex;
+
+  flex-direction: row;
+
+  align-items: center;
+
+  width: 15ch;
+}
+
+input[type="number"],
+.app-cl-number {
+  font-family: var(--app-font-mono);
+
+  text-align: right;
+}
+
+.app-cmp-input-no {
+  display: inline-flex;
+
+  flex-direction: row;
+
+  width: 3ch;
+
+  margin-inline: 1ch;
+}
+
+.app-cmp-input,
+.app-cmp-result {
+  flex: 1 0 auto;
+}
+
+.app-cmp-result {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding-right: 2ch;
+}
+
+.app-cl-dummy {
+  visibility: hidden !important;
+}
+
+.app-cmp-section-container {
+  display: block;
+}
+
+.app-main-container {
+  margin: 5% 30%;
+}
+
+.app-haeder-section {
+  border-bottom: 7px inset #2600ff;
+
+  margin-bottom: 3ch;
+
+  padding-bottom: 3ch;
+}
