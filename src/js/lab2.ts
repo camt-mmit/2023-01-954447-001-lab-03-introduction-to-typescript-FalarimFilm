@@ -1,3 +1,3 @@
-import { createSection } from './section-component.js';
+import { createSection } from "./section-component.js";
 
 createSection(document.body);
